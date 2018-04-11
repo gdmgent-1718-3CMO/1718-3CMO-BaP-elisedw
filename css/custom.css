@@ -1,0 +1,1033 @@
+/* Body */
+.equallength {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.centerindiv {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nomarge {
+    margin: 0;
+    padding: 0;
+}
+
+.extrapadding {
+    padding-bottom: 10%;
+}
+
+#contentpage {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(../fonts/Metropolis-SemiBold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(../fonts/Metropolis-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(../fonts/Metropolis-Medium.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(../fonts/Metropolis-ExtraBold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(../fonts/Metropolis-Bold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Aanpassing containerbreedte */
+@media only screen and (min-width: 993px) {
+.container {
+    width: 75%;
+}
+    
+}
+
+@media only screen and (max-width: 601px) {
+.container {
+    width: 80%;
+}
+    
+}
+
+/* Navigatie */
+.navigatie {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigatie {
+    background-color: #f2f2f2;
+    min-height: 100%;
+    position: relative;
+}
+
+#navi {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-gelebalk {
+    width: 100%;
+    height: 9px;
+    background-color: rgb(252,203,19);
+    z-index: 5;
+    position: relative;
+}
+
+.logonav {
+    width: 50%;
+}
+
+#logonav-div {
+    z-index: 20;
+    position: absolute;
+}
+
+.collapsible {
+    background-color: #f2f2f2;
+    border: none;
+    box-shadow: none;
+    margin-top: 30%;
+}
+
+.collapsible-header {
+    color: black;
+    padding-left: 10%;
+    font-weight: 600;
+    font-family: Metropolis;
+    letter-spacing: 0.075em;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding-left: 15%;
+}
+
+.collapsible-header:hover, .collapsible-header:active, .collapsible-body a:hover, .collapsible-body a:active {
+    color: rgb(252,203,19);
+}
+
+.collapsible-body {
+    background-color: #f2f2f2;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding-left: 20%;
+    padding-bottom: 4%;
+    padding-top: 0;
+}
+
+.collapsible-body a:last-child {
+    padding-bottom: 5%;
+}
+
+.collapsible-body a {
+    font-weight: 500;
+    font-family: Metropolis;
+    letter-spacing: 0.075em;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    line-height: 2.25em;
+}
+
+.collapsible-body.active a, .collapsible-header.active {
+    color: rgb(252,203,19);
+}
+
+.collapsible-body.active a:hover {
+    color: rgb(252,203,19);
+    font-weight: 800;
+}
+
+/* Aanpassingen voor mobiel */
+@media only screen and (max-width: 601px) {
+    #menuknop {
+        color: black;
+        font-size: 35px;
+        margin: 0;
+        margin-top: 3%;
+        margin-right: 4%;
+        padding: 0;
+        position: relative;
+    }
+    
+    .row.mobnav {
+        margin-bottom: 0;
+    }
+    
+    .mobilenav {
+        width: 100vw;
+        max-width: 100%;
+        height: 60px;
+        box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+    }
+    
+    .a.sidenav-trigger {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-gelebalk {
+        margin-bottom: 4%;
+    }
+    
+    .logomobile {
+        width: 10%;
+        position: absolute;
+        margin-left: 6%;
+        margin-top: 3.75%;
+    }
+    
+    .sidenav li {
+        border-bottom: 1.25px #f2f2f2 solid;
+    }
+    
+    .sidenav li a {
+        color: black;
+        font-weight: 600;
+        font-family: Metropolis;
+        letter-spacing: 0.075em;
+        font-size: 16px;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        padding-left: 6%;
+        padding: 4%;
+    }
+    
+    .collapsible {
+        margin: 0;
+        background-color: white;
+    }
+    
+    .sidenav .collapsible-body {
+        background-color: white;
+    }
+    
+    .sidenav .collapsible-body a:hover, .sidenav .collapsible-body a:target {
+        background-color: white;
+    }
+    
+    .sidenav .collapsible-body a:hover, .sidenav .collapsible-body a:focus {
+        color: black;
+        background-color: white;
+    }
+    
+    .sidenav .collapsible-body a {
+        font-size: 14px;
+        display: block;
+        margin: 0;
+        padding: 3%;
+        padding-left: 15%;
+    }
+    
+    .sidenav .collapsible-body a:first-child {
+        padding-top: 6%;
+    }
+    
+    .sidenav .collapsible-body a:last-child {
+        padding-bottom: 6%;
+    }
+}
+
+/* Aanpassingen voor tablet */
+@media only screen and (min-width: 601px) and (max-width: 993px) {
+    .logonav {
+        width: 60%;
+    }
+}
+
+/* Tekst */
+h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    color: rgb(252,203,19);
+    line-height: 1.75em;
+    border-bottom: 9px rgb(252,203,19) solid;
+    margin-bottom: 2.5%;
+    margin-left: 11.5%;
+    font-size: 50px;
+    font-variant-numeric: normal;
+    font-feature-settings: 'lnum';
+    font-variant-ligatures: no-common-ligatures;
+}
+
+h2 {
+    font-family: Metropolis;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.15em;
+    line-height: 1.75em;
+    font-variant-numeric: normal;
+    font-feature-settings: 'lnum';
+    font-variant-ligatures: no-common-ligatures;
+}
+
+h3 {
+    font-family: Metropolis;
+    font-weight: 700;
+    font-size: 120%;
+    letter-spacing: 0.15em;
+    color: rgb(252,203,19);
+    line-height: 1.75em;
+    font-variant-numeric: normal;
+    font-feature-settings: 'lnum';
+    font-variant-ligatures: no-common-ligatures;
+}
+
+p, a {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 1.75em;
+    font-variant-numeric: normal;
+    font-feature-settings: 'lnum';
+    font-variant-ligatures: no-common-ligatures;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* Aanpassingen voor mobiel */
+@media only screen and (max-width: 601px) {
+    h1 {
+        margin-left: 7%;
+    }
+}
+
+/* Aanpassingen voor tablet */
+@media only screen and (min-width: 601px) and (max-width: 993px) {
+    h1 {
+        margin-left: 6%;
+    }
+}
+
+/* Home pagina */
+.achtergrond1 {
+    background-image: url(../images/achtergrond.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.intro {
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.intro2 {
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+.intro h1 {
+    border: none;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    line-height: 1.15em;
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin-bottom: 6%;
+}
+
+.intro p {
+    margin-bottom: 10%;
+    width: 90%;
+}
+
+.personality h1 {
+    margin-left: 14.5%;
+    margin-bottom: 0;
+    margin-top: 5%;
+}
+
+.intro2 h2 {
+    letter-spacing: 0.15em;
+    font-size: 16px;
+    margin-bottom: 2%;
+}
+
+.intro2 p {
+    margin-top: 0;
+}
+
+.row.col.s12.personality {
+    margin: 0;
+    padding: 0;
+}
+
+.zwartehond {
+    width: 140%;
+    margin-top: 40%;
+}
+
+/* Aanpassingen voor mobiel */
+@media only screen and (max-width: 601px) {
+    .homecontainer {
+        width: 90%;
+    }
+    
+    .homenav {
+        z-index: 50;
+        position: relative;
+    }
+    
+    .personality h1 {
+        line-height: 1em;
+        padding-bottom: 5%;
+        margin-left: 10%;
+    }
+    
+    .zwartehond {
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    .intro {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    
+    #vbknop {
+        padding: 5.5%;
+        padding-left: 7%;
+        padding-right: 6%;
+    }
+
+}
+
+/* Aanpassingen voor tablet */
+@media only screen and (min-width: 601px) and (max-width: 993px) {
+    .personality h1 {
+        margin-left: 11%;
+    }
+    
+    .zwartehond {
+        width: 80%;
+        margin-top: 0;
+    }
+    
+}
+    
+/* Typografie pagina */
+.typo-vb-h1 {
+    font-size: 24px;
+    letter-spacing: 0.075em;
+    text-align: center;
+    border: none;
+    font-variant-numeric: normal;
+    font-feature-settings: 'lnum';
+    font-variant-ligatures: no-common-ligatures;
+    box-shadow: 0px 6px 30px 2px rgba(0,0,0,0.15);
+    padding: 10%;
+}
+
+.typo-vb-p {
+    font-size: 20px;
+    font-weight: 300;
+    box-shadow: 0px 6px 30px 2px rgba(0,0,0,0.15);
+    padding: 10%;
+}
+
+.vb-metro {
+    display: block;
+}
+
+.vb-metro h2, .vb-metro h3 {
+    box-shadow: 0px 6px 30px 2px rgba(0,0,0,0.15);
+    padding: 10%;
+}
+
+.vb-metro h2 {
+    font-size: 18px;
+}
+
+.vb-metro h3 {
+    font-size: 15px;
+}
+
+/* Aanpassingen voor mobiel */
+@media only screen and (max-width: 601px) {
+    #metropolis {
+        text-align: left;
+    }
+}
+
+/* Aanpassingen voor tablet */
+@media only screen and (min-width: 601px) and (max-width: 993px) {
+    #metropolis {
+        text-align: left;
+    }
+    
+}
+    
+/* Lay-out pagina */
+.vb-balk {
+    width: 80%;
+}
+
+.voorbeeldwitkader {
+    width: 80%;
+    height: 50%;
+    padding: 2%;
+    box-shadow: 0px 2px 30px 1px rgba(0,0,0,0.15);
+}
+
+.voorbeeldhondenpoot {
+    width: 80%;
+    padding: 2%;
+    box-shadow: 0px 2px 30px 1px rgba(0,0,0,0.15);
+}
+
+.hondenpoot {
+    width: 5%;
+    margin-right: 4%;
+    margin-bottom: -1%;
+}
+
+.vb-knop {
+    background-color: #1e1f23;
+    color: white;
+    padding: 3%;
+    padding-left: 6%;
+    padding-right: 5.5%;
+    font-size: 12px;
+    font-family: 'Metropolis';
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    outline: none;
+}
+
+.goldenretriever {
+    width: 110%;
+}
+
+#lay2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Aanpassingen voor mobiel */
+@media only screen and (max-width: 601px) {
+    .lay-mob p {
+        margin-bottom: 12%;
+    }
+    
+    .voorbeeldwitkader {
+        height: 150px;
+    }
+    
+    .voorbeeldhondenpoot p {
+        margin: 0;
+        padding: 5%;
+    }
+    
+    #lay2 {
+        text-align: left;
+    }
+    
+    .goldenretriever {
+        width: 90%;
+    }
+    
+}
+    
+/* Aanpassingen voor tablet */
+@media only screen and (min-width: 601px) and (max-width: 993px) {
+    .vb-balk {
+        margin-top: 5%;
+    }
+    
+    .voorbeeldwitkader {
+        height: 150px;
+        width: 60%;
+        margin-top: 5%;
+    }
+    
+    .hondenpoot {
+        width: 5%;
+    }
+    
+    .voorbeeldhondenpoot {
+        padding: 3%;
+        margin: 0;
+        width: 60%;
+        margin-top: 7.5%;
+    }
+    
+    #lay2 {
+        text-align: left;
+    }
+    
+    .goldenretriever {
+        width: 90%;
+    }
+}
+    
+/* Kleuren pagina */
+.row .col.l3.kleurcodes {
+    width: 20%;
+}
+
+.kleurcodes {
+    box-shadow: 0px 6px 20px 2px rgba(0,0,0,0.15);
+    padding: 10%;
+    margin: 2%;
+}
+
+.kleurcodes h2 {
+    font-size: 12px;
+}
+
+.geel {
+    background-color: rgb(252,203,19);
+    height: 30px;
+    width: 100%;
+}
+
+.zwart {
+    background-color: #1e1f23;
+}
+
+.wit {
+    background-color: white;
+    border: 1px lightgrey solid;
+}
+
+.grijs {
+    background-color: #f2f2f2;
+}
+
+.cmyk-rgb {
+    padding: 0;
+    margin: 0;
+    margin-top: -20%;
+}
+
+/* Aanpassingen voor mobiel */
+@media only screen and (max-width: 601px) {
+    .row .col.l3.kleurcodes {
+        width: 80%;
+    }
+    
+    .kleurcodes {
+        margin-bottom: 15%;
+    }
+}
+
+/* Aanpassingen voor tablet */
+@media only screen and (min-width: 601px) and (max-width: 993px) {
+    .row .col.l3.kleurcodes {
+        width: 40%;
+    }
+    
+    .kleurcodes {
+        margin-bottom: 7.5%;
+    }
+}
+
+/* Logo pagina */
+.logodownload h2 {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2%;
+}
+
+.logodownload {
+    margin-bottom: 7.5%;
+}
+
+.logovolledig {
+    width: 70%;
+}
+
+.logoformaten {
+    display: flex;
+    align-items: flex-end;
+}
+
+#logo2 p:last-child {
+    margin-bottom: 12%;
+}
+
+#logo4 p:last-child {
+    margin-bottom: 12%;
+}
+
+.logoformaat {
+    width: 60%;
+}
+
+.logosymbool {
+    width: 35%;
+}
+
+.pijl {
+    width: 60%;
+}
+
+.logowitruimte {
+    width: 70%;
+}
+
+.logodownload a {
+    background-color: #1e1f23;
+    color: white;
+    padding: 4%;
+    padding-left: 6%;
+    padding-right: 5.5%;
+    font-size: 11px;
+    font-family: 'Metropolis';
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    outline: none;
+    font-variant-numeric: normal;
+    font-feature-settings: 'lnum';
+    font-variant-ligatures: no-common-ligatures;
+    margin-bottom: -7%;
+    display: block;
+    text-align: center;
+}
+
+.downloadwit {
+    margin-top: 20%;
+}
+
+.logodownload a:hover {
+    color: rgb(252,203,19);
+}
+
+#logo2, #logo3, #logo4, #logo5 {
+    margin-top: 7.5%;
+}
+
+#logo5 {
+    box-shadow: 0px 6px 20px 2px rgba(0,0,0,0.15);
+    padding: 7.5%;
+    padding-top: 2%;
+    margin-top: 15%;
+}
+
+/* Aanpassingen voor mobiel */
+@media only screen and (max-width: 601px) {
+    .logoformaten {
+        display: block;
+    }
+    
+    .logosymbool {
+        clear: both;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .varianten, .logoformaat {
+        width: 60%;
+    }
+    
+    .varianten {
+        margin-bottom: 10%;
+    }
+
+    .logovolledig {
+        margin-top: 12%;
+    }
+    
+    #logo2, #logo4 {
+        text-align: left;
+    }
+    
+    #logo3 {
+        margin-top: -10%;
+    }
+    
+    .logowitruimte {
+        margin-top: 10%;
+    }
+    
+    #logo5 {
+        margin-left: 0;
+    }
+    
+    .logodownload a {
+        font-size: 10.5px;
+    }
+    
+    .logodownload {
+        margin-bottom: 12.5%;
+    }
+    
+}
+
+/* Aanpassingen voor tablet */
+@media only screen and (min-width: 601px) and (max-width: 993px) {
+    .logovolledig {
+        width: 50%;
+        margin-top: 7.5%;
+    }
+    
+    #logo2, #logo4 {
+        text-align: left;
+    }
+    
+    .logowitruimte {
+        width: 50%;
+        margin-top: 5%;
+    }
+    
+    .logoformaat {
+        width: 80%;
+    }
+    
+    .logosymbool {
+        width: 50%;
+    }
+    
+    .logodownload {
+        margin-bottom: 15%;
+    }
+    
+}
+
+/* Templates pagina */
+.template p {
+    margin-bottom: 10%;
+}
+
+.template {
+    margin-bottom: 10%;
+}
+
+.folder {
+    width: 100%;
+    margin-left: 7.5%;
+}
+
+.powerpoint {
+    width: 130%;
+    margin-left: -7.5%;
+}
+
+.visitekaartje {
+    width: 150%;
+}
+
+.nieuwsbrief {
+    width: 40%;
+    box-shadow: 0px 6px 15px 2px rgba(0,0,0,0.15);
+    margin-left: 7.5%;
+}
+
+.fotomockup {
+    width: 90%;
+}
+
+/* Aanpassingen voor mobiel */
+@media only screen and (max-width: 601px) {
+    .folder, .powerpoint, .visitekaartje, .fotomockup {
+        width: 50%;
+        margin-left: 0;
+    }
+    
+    .folder {
+        width: 80%;
+    }
+    
+    .powerpoint {
+        width: 100%;
+    }
+    
+    .visitekaartje {
+        width: 120%;
+    }
+    
+    .fotomockup {
+        width: 65%;
+    }
+}
+
+/* Aanpassingen voor tablet */
+@media only screen and (min-width: 601px) and (max-width: 993px) {
+    .folder, .powerpoint, .visitekaartje, .fotomockup {
+        width: 70%;
+        margin: 0;
+    }
+    
+    .folder {
+        margin-left: 10%;
+    }
+    
+    .powerpoint {
+        width: 85%;
+    }
+    
+    .visitekaartje {
+        width: 100%;
+    }
+    
+    .nieuwsbrief {
+        width: 30%;
+    }
+    
+    .fotomockup {
+        width: 60%;
+        margin-left: 5%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #1e1f23;
+    color: white;
+    padding-right: 8.5%;
+    padding-left: 8.5%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    clear: both;
+    margin-top: 0;
+}
+
+footer p, footer a {
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.icons a {
+    padding-right: 2.5%;
+}
+
+.icons a:last-child {
+    padding-right: 0;
+}
+
+.footerinfo a, .footerinfo a:visited {
+    text-decoration: none;
+    color: rgb(252,203,19);
+}
+
+.footerinfo a:hover {
+    font-weight: 600;
+}
+
+.logofooter {
+    width: 60%;
+}
+
+.icons a img {
+    width: 7.5%;
+}
+
+.studentinfo {
+    background-color: #2a2a2a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.studentinfo p {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+.st-info-container {
+    width: 80%;
+}
+
+.artelogo {
+    width: 4%;
+    margin-right: 1.5%;
+    margin-bottom: -0.75%;
+}
+
+/* Aanpassingen voor mobiel */
+@media only screen and (max-width: 601px) {
+    footer {
+        padding-top: 5%;
+    }
+    
+    .footer-part-sm, .icons {
+        display: none;
+    }
+
+    .logofooter {
+        width: 100%
+    }
+
+    .footer-xs-icons {
+        margin-left: 2%;
+    }
+    
+    .footer-xs-icons a img {
+        width: 25%;
+    }
+    
+    .footer-xs-icons a {
+        padding-right: 7%;
+    }
+    
+    .footer-xs-icons a:last-child {
+        padding-right: 0;
+    }
+    
+    .artelogo {
+        width: 13%;
+        margin-bottom: -2%;
+    }
+    
+    .st-info-container {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+
+/* Aanpassingen voor tablet */
+@media only screen and (min-width: 601px) and (max-width: 993px) {
+    .logofooter {
+        width: 140%;
+    }
+
+    .icons a img {
+        width: 20%;
+        padding: 0;
+    }
+
+    .icons {
+        margin-left: 10%;
+    }
+    
+    .artelogo {
+        width: 5%;
+    }
+}
